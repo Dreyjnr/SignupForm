@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    SIGNUP PAGE
+    <form action="">
+      <input type="text" placeholder="USERNAME" id="username" />
+      <br />
+      <br />
+      <input type="text" placeholder="EMAIL ADDRESS" id="email" />
+      <br />
+      <br />
+      <input type="password" placeholder="PASSWORD" id="password" />
+      <br />
+      <br />
+      <input type="password" placeholder="CONFIRM PASSWORD" id="confirmPass" />
+      <br />
+      <br />
+      <button onclick="signUp()">SIGNUP</button>
+    </form>
+
+    <script>
+      let username = document.getElementById("username");
+      let email = document.getElementById("email");
+      let password = document.getElementById("password");
+      let confirmPass = document.getElementById("confirmPass");
+
+      function signUp() {
+        // username.value == ""
+        //   ? alert("Username is required")
+        //   : email.value == ""
+        //   ? alert("Email is required")
+        //   : password.value == ""
+        //   ? alert("Password is required")
+        //   : password.value != confirmPass.value
+        //   ? alert("Password and Confirm Password must be the same")
+        //   : alert("Sign Up Successful");
+
+        if (username.value == "") {
+        alert("Username is required");
+        } else if (email.value == "") {
+        alert("Email is required");
+        } else if (password.value == "") {
+        alert("Password is required");
+        } else if (confirmPass.value == "") {
+        alert("Confirm Password is required");
+        } else if (password.value != confirmPass.value) {
+        alert("Password and Confirm Password must be the same");
+        } else {
+        alert("Sign Up Successful");
+        }
+      }
+
+      
+    </script>
+  </body>
+</html>
